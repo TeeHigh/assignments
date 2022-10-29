@@ -1,0 +1,141 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: hsl(0, 0%, 95%);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    /* margin-top: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 600px;
+    display: flex; */
+    width: 60%;
+    min-width: 1140px; 
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+p, a{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+.box1, .box2, .box3{
+    width: 480px;
+    height: 100%;
+    padding: 50px;
+}
+.box1{
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.box2{
+    background: hsl(184, 100%, 22%);
+}
+.box3{
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.box1 a, .box2 a, .box3 a{
+    text-decoration: none;
+    padding: 0.625rem 1.875rem;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: 0.5s;
+}
+.box1 a:hover{
+    background: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+.box2 a:hover{
+    background: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+.box3 a:hover{
+    background: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+.container img{
+    padding-bottom: 3.75rem;
+    width: 5rem;
+}
+.container h1{
+    padding-bottom: 2.813rem;
+    font-size: 3.125rem;
+}
+.container p{
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 120px;
+}
+@media(max-width: 700px){
+    .box1, .box2, .box3{
+        width: 7.813rem;
+        height: 100%;
+        padding: 3.125rem;
+    }
+    
+    .container p{
+        letter-spacing: 0px;
+        line-height: 1.563rem;
+        padding-bottom: 7.5rem;
+    }
+}
+footer a{
+    text-align: center;
+    width: 100px;
+    margin-left: 30px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(95, 51, 255);
+}
